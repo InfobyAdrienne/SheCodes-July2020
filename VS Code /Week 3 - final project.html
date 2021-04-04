@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nelson Mandela Day</title>
+    <style>
+      h1 {
+        color: #f0583d;
+        text-align: center;
+        border-style: solid;
+        border-color: #f0583d;
+        padding: 20px;
+      }
+
+      h2 {
+        color: #f0583d;
+        text-align: center;
+      }
+
+      p {
+        color: black;
+        font-family: sans-serif;
+        text-align: justify;
+      }
+
+      .footer {
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 12px;
+      }
+
+      button {
+        text-align: center;
+        border-style: solid;
+        border-color: #f0583d;
+        background-color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 5px 40px;
+        display: block;
+        margin: auto;
+      }
+
+      button:hover {
+        color: #f0583d;
+        cursor: pointer;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+
+      a:hover {
+        color: #f0583d;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <h1>
+    Nelson Mandela
+  </h1>
+  <h2>
+    Today is National Nelson Mandela Day
+  </h2>
+  <img
+    src="https://static01.nyt.com/images/2013/12/06/world/Mandela/Mandela-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+    alt="Nelson Mandela"
+  />
+  <p>
+    Rolihlahla Mandela was born into the Madiba clan in the village of Mvezo, in
+    the Eastern Cape, on 18 July 1918. His mother was Nonqaphi Nosekeni and his
+    father was Nkosi Mphakanyiswa Gadla Mandela, principal counsellor to the
+    Acting King of the Thembu people, Jongintaba Dalindyebo. In 1930, when he
+    was 12 years old, his father died and the young Rolihlahla became a ward of
+    Jongintaba at the Great Place in Mqhekezweni1.
+    <br />
+    <br />
+    Hearing the elders’ stories of his ancestors’ valour during the wars of
+    resistance, he dreamed also of making his own contribution to the freedom
+    struggle of his people.
+  </p>
+  <a
+    href="https://www.nelsonmandela.org/content/page/biography"
+    target="_blank"
+  >
+    To learn more click here
+  </a>
+  <br />
+  <br />
+  <button>
+    👉🏽 Donate here
+  </button>
+  <br />
+  <p class="footer">
+    This page was built by Adrienne Galloway
+  </p>
+  <br />
+  <body>
+    <script>
+      let donateButton = document.querySelector("button");
+
+      function Donate() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert("Thank you " + name + ", we will be in touch!");
+      }
+      donateButton.addEventListener("click", Donate);
+    </script>
+  </body>
+</html>
